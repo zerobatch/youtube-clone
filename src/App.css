@@ -1,22 +1,53 @@
-.App {
-  text-align: center;
+body {
+  background: #fafafa !important;
 }
 
-.App-logo {
-  height: 40vmin;
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2020;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  background-color: white;
+  padding: 1em 0.95em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar .Navbar__Content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #09d3ac;
+.Navbar__Brand i.bars {
+  margin-right: 0.75em;
+}
+
+.Navbar__Brand .Navbar__Logo {
+  width: 80px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.inline-error {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+.VideoList .VideoList__Category {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin: 24px 0 24px 24px;
+}
+
+.VideoList .VideoItem {
+  padding: 0.5em 1.3em;
+}
+
+.VideoList .VideoDetail__TimeAgo {
+  font-size: 1.06em !important;
 }
